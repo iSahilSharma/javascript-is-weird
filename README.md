@@ -4,6 +4,6 @@ I created this repository to document my dumbfounding close encounters with Java
     console.log(alert(1));
 
 ### What will be the output?
-I thought that there will be no output and only the alert message popup will appear. However, the output is undefined along with the alert message.
+I thought there would be no output and only the alert message popup will appear. However, the output was undefined along with the alert message.
 
-## Following are the list of such encounters:
+## Close encounters:
