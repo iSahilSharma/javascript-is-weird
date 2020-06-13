@@ -26,11 +26,11 @@ Seems working, right? Wait until you run the following code:
  #### What do you thing will be the output of numbers?   
  As per the normal understanding, the strings should be sorted alphabetically and numbers numerically. Hence, we expect the output to be:
  
-      // Output: Array [1, 4, 21, 30, 100000]
+      Output: Array [1, 4, 21, 30, 100000]
 
 However, the output comes to be:
     
-    // Output: Array [1, 100000, 21, 30, 4]
+      Output: Array [1, 100000, 21, 30, 4]
  
 This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into strings and then sort them alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order). To get the sort function to perform numerical sort, we need to tweak the method:
 
