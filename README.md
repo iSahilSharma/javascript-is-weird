@@ -24,12 +24,12 @@ Seems working, right? Wait until you run the following code:
     console.log(numbers); 
  
  #### What do you thing will be the output of numbers?   
- As per the normal understanding, the strings are sorted alphabetically and numbers are sorted numerically. Hence, we expect the output to be:
+ As per the normal understanding, the strings should be sorted alphabetically and numbers numerically. Hence, we expect the output to be:
  
-      // Output: Array [1, 100000, 21, 30, 4]
+      // Output: Array [1, 4, 21, 30, 100000]
 
 However, the output comes to be:
     
     // Output: Array [1, 100000, 21, 30, 4]
  
-This is my first dumbfound encounter with JavaScript. The reason for this is
+This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into string and then sorts it alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order).
