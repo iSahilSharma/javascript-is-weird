@@ -15,7 +15,9 @@ Let's consider an example:
 
     const months = ['March', 'Jan', 'Feb', 'Dec'];
     months.sort();
-    console.log(months); // Output: Array ["Dec", "Feb", "Jan", "March"]`
+    console.log(months); 
+    
+    Output: Array ["Dec", "Feb", "Jan", "March"]`
 
 Seems working, right? Wait until you run the following code:
 
