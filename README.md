@@ -34,7 +34,11 @@ However, the output comes to be:
     
       Output: Array [1, 100000, 21, 30, 4]
  
-This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into strings and then sort them alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order). To get the sort function to perform numerical sort, we need to tweak the method:
+This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into strings and then sort them alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order).
+
+>This is why you'll see episode numberings on media files (S1E01) with a prepended 0 so a lexicographic sort doesn't mess things up and allows programs to simply play/display in alphabetical order.
+
+To get the sort function to perform numerical sort, we need to tweak the method:
 
 For ES5 and lower versions:
 
