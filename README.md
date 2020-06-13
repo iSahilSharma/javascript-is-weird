@@ -32,4 +32,4 @@ However, the output comes to be:
     
     // Output: Array [1, 100000, 21, 30, 4]
  
-This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into string and then sorts it alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order).
+This is my first dumbfound encounter with JavaScript. The reason for this is sort method converts the elements inside the array into strings and then sort them alphabetically. This is called [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order).
