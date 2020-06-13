@@ -53,4 +53,8 @@ For ES6 onwards:
     numbers.sort((a,b) => b - a);   // For descending sort
     console.log(numbers); 
     
+ The expression `a-b` sorts the array based on the following three condtions:
  
+ - If a-b = 0 `a and b should be considered equals and hence no sorting will be performed`
+ - If a-b > 0 `Sort b to the lower index of a`
+ - If a-b < 0 `Sort a to the lower index of b`
