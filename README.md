@@ -58,3 +58,42 @@ For ES6 onwards:
  - If a-b = 0 `a and b should be considered equals and hence no sorting will be performed`
  - If a-b > 0 `Sort b to the lower index of a`
  - If a-b < 0 `Sort a to the lower index of b`
+
+ #### `Type coercion`
+ 
+According to MDN, Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). Type conversion is similar to type coercion because they both convert values from one data type to another with one key difference — type coercion is implicit whereas type conversion can be either implicit or explicit.
+
+Let's consider an example:
+
+    let num1 = 22;
+    let num2 = 2;
+    
+    let sum = num1 + num2;
+    let diff = num1 - num2;
+    console.log(sum); 
+    console.log(diff); 
+    
+    Output: 24, 20
+    
+ Seems working, right? Wait until you run the following code:
+
+    let num1 = 22;
+    let num2 = '2';
+    
+    let sum = num1 + num2;
+    let diff = num1 - num2;
+    console.log(sum);     
+    console.log(diff); 
+    
+    Output: 222, 20
+ 
+This is like the biggest dumbfound experience and before you start scratichg your head, it is caused because of `+` operator. `+` operator in JavaScript has two meanings:
+
+>   Plus Operator 
+>
+>   Concatenation Operator
+  
+If both the left and right side of the operator consists a number, it works as plus operator and adds the numbers, else if any of the side  contains string or other type, it concatenates the sides. In case of `-` operator, it works as negation operator for all the scenarios and converts the non-number types into number.
+
+ 
+ 
