@@ -104,3 +104,7 @@ If both the left and right side of the operator consists a number, it works as p
      console.log(1 < 5 < 7);   // Converts to 1 < 5 < 7 = true < 7 = 1 < 7 = true
 
 The above examples can be used to understand type coercion. In the first example `1 > true`, true is converted to number as 1 and then the expression gets evaluated. Similary for `1 > 5 > 7`, first `1 > 5` gets evaluated and the result is converted to number and hence the expression gets evaluated.
+
+ #### `Event Loop`
+ 
+Sometimes setTimeout(callback function, 0);
